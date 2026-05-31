@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Treino para mães: reconstruir a barriga depois do bebê, sem abdominal</title>
 <meta name="description" content="5 exercícios em 20 minutos, em casa, pra reconstruir o core depois da gravidez e ajudar na diástase abdominal. Sem abdominal tradicional, sem impacto." />
-<meta name="theme-color" content="#0d1117" />
+<meta name="theme-color" content="#fbf3ee" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤱</text></svg>" />
 
 <meta property="og:title" content="Treino para mães: reconstruir a barriga depois do bebê, sem abdominal" />
@@ -14,7 +14,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
 <!-- Meta Pixel: Pixel Performix -->
 <script>
@@ -35,416 +35,344 @@ src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></n
 
 <style>
   :root{
-    --bg:#0d1117;
-    --surface:#161b22;
-    --surface-2:#1c222b;
-    --border:#30363d;
-    --border-hover:#484f58;
-    --text:#e6edf3;
-    --muted:#8b949e;
-    --muted-2:#6e7681;
-    --accent:#a855f7;
-    --accent-soft:rgba(168,85,247,.12);
-    --accent-border:rgba(168,85,247,.35);
-    --lemon:#f4d03f;
-    --success:#4ade80;
-    --success-soft:rgba(74,222,128,.10);
-    --success-border:rgba(74,222,128,.30);
-    --danger:#f43f5e;
-    --danger-soft:rgba(244,63,94,.08);
-    --danger-border:rgba(244,63,94,.28);
+    --cream:#fbf3ee;
+    --cream-2:#f6e8e0;
+    --card:#ffffff;
+    --blush:#f8e6df;
+    --line:#efddd3;
+    --rose:#d98b7d;
+    --rose-strong:#bf6c5c;
+    --pink:#e7a6ac;
+    --text:#473833;
+    --text-soft:#6f5d56;
+    --muted:#9a857c;
+    --sage:#5f9b76;
+    --sage-soft:#eaf3ec;
+    --amber:#b07d35;
+    --amber-soft:#fbf0dd;
+    --rosey-soft:#fcebe6;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
   html{scroll-behavior:smooth}
   body{
     font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
     color:var(--text);
-    background:var(--bg);
+    background:
+      radial-gradient(1100px 600px at 50% -10%, #fde9e0, transparent 70%),
+      radial-gradient(800px 700px at 100% 8%, #f7eafc, transparent 60%),
+      var(--cream);
+    background-attachment:fixed;
     min-height:100vh;
-    line-height:1.6;
+    line-height:1.65;
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit;text-decoration:none}
 
   main.wrap{
     width:100%;
-    max-width:720px;
+    max-width:640px;
     margin:0 auto;
-    padding:48px 22px 80px;
+    padding:44px 20px 70px;
   }
 
   /* HERO */
-  .hero{margin-bottom:56px}
+  .hero{margin-bottom:40px;text-align:center}
   .eyebrow{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
     font-size:12px;
     font-weight:700;
-    letter-spacing:1.2px;
+    letter-spacing:.6px;
     text-transform:uppercase;
-    color:var(--muted);
-    background:var(--surface);
-    border:1px solid var(--border);
-    padding:6px 12px;
+    color:var(--rose-strong);
+    background:var(--card);
+    border:1px solid var(--line);
+    padding:7px 15px;
     border-radius:999px;
-    margin-bottom:20px;
+    margin-bottom:22px;
+    box-shadow:0 4px 16px rgba(191,108,92,.08);
   }
   .hero h1{
-    font-size:clamp(28px,5.2vw,42px);
-    font-weight:900;
-    line-height:1.15;
-    letter-spacing:-1px;
-    margin-bottom:18px;
-    color:var(--text);
-  }
-  .hero .lead{
-    font-size:17px;
-    color:var(--muted);
-    line-height:1.65;
-    max-width:620px;
-  }
-
-  /* TOC */
-  .toc{
-    margin-top:28px;
-    padding:18px 20px;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:10px;
-  }
-  .toc .toc-title{
-    font-size:11.5px;
-    font-weight:700;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
-    color:var(--muted-2);
-    margin-bottom:12px;
-  }
-  .toc ol{list-style:none;display:flex;flex-direction:column;gap:8px}
-  .toc ol li{font-size:14.5px}
-  .toc ol li a{color:var(--text);border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
-  .toc ol li a:hover{color:var(--accent);border-bottom-color:var(--accent)}
-  .toc ol li .num{color:var(--muted-2);margin-right:10px;font-variant-numeric:tabular-nums}
-
-  /* SECTIONS */
-  section{margin-bottom:48px}
-  section > h2{
-    font-size:24px;
-    font-weight:800;
-    letter-spacing:-.4px;
-    margin-bottom:16px;
-    color:var(--text);
-  }
-  section > p{font-size:15.5px;color:var(--muted);margin-bottom:14px}
-  section > p b{color:var(--text);font-weight:600}
-
-  .bullets{display:flex;flex-direction:column;gap:10px;margin:14px 0}
-  .bullets li{
-    list-style:none;
-    font-size:15px;
-    color:var(--muted);
-    padding-left:22px;
-    position:relative;
-    line-height:1.6;
-  }
-  .bullets li::before{
-    content:"";
-    position:absolute;
-    left:6px;top:11px;
-    width:6px;height:6px;
-    background:var(--accent);
-    border-radius:50%;
-  }
-
-  .disclaimer{
-    margin-top:18px;
-    font-size:13.5px;
-    color:var(--muted-2);
-    background:var(--surface);
-    border-left:3px solid var(--border-hover);
-    padding:12px 16px;
-    border-radius:4px;
-    line-height:1.55;
-  }
-
-  /* EXERCISE CARD */
-  .exercise{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:28px 26px;
-    margin-bottom:24px;
-    transition:border-color .2s;
-  }
-  .exercise:hover{border-color:var(--border-hover)}
-  .exercise h3{
-    font-size:22px;
-    font-weight:800;
-    letter-spacing:-.3px;
-    margin-bottom:14px;
-    display:flex;
-    align-items:baseline;
-    gap:12px;
-    flex-wrap:wrap;
-  }
-  .exercise h3 .ord{
-    font-size:13px;
-    font-weight:700;
-    color:var(--accent);
-    background:var(--accent-soft);
-    border:1px solid var(--accent-border);
-    padding:3px 9px;
-    border-radius:6px;
-    letter-spacing:.5px;
-  }
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-  .chip{
-    font-size:12px;
+    font-family:'Fraunces',Georgia,serif;
+    font-size:clamp(30px,6.4vw,46px);
     font-weight:600;
-    padding:4px 10px;
-    border-radius:6px;
-    background:var(--surface-2);
-    border:1px solid var(--border);
-    color:var(--muted);
-  }
-  .chip.reps{
-    background:rgba(244,208,63,.08);
-    border-color:rgba(244,208,63,.30);
-    color:var(--lemon);
-  }
-  .chip.focus{
-    background:var(--accent-soft);
-    border-color:var(--accent-border);
-    color:#d4b3ff;
-  }
-
-  .label{
-    font-size:11.5px;
-    font-weight:700;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
-    color:var(--muted-2);
-    margin-bottom:8px;
-  }
-
-  .steps{
-    counter-reset:step;
-    list-style:none;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    margin-bottom:20px;
-  }
-  .steps li{
-    counter-increment:step;
-    font-size:15px;
-    color:var(--text);
-    padding-left:32px;
-    position:relative;
-    line-height:1.55;
-  }
-  .steps li::before{
-    content:counter(step);
-    position:absolute;
-    left:0;top:1px;
-    width:22px;height:22px;
-    background:var(--surface-2);
-    border:1px solid var(--border);
-    border-radius:50%;
-    color:var(--muted);
-    font-size:12px;
-    font-weight:700;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-
-  .callout{
-    border-radius:8px;
-    padding:12px 14px;
-    font-size:14px;
-    line-height:1.55;
-    margin-top:12px;
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-  }
-  .callout .ico{font-weight:900;font-size:14px;line-height:1.55;flex-shrink:0}
-  .callout.error{
-    background:var(--danger-soft);
-    border:1px solid var(--danger-border);
-    color:#fda4af;
-  }
-  .callout.error .ico{color:var(--danger)}
-  .callout.error b{color:#fecdd3}
-  .callout.tip{
-    background:var(--success-soft);
-    border:1px solid var(--success-border);
-    color:#bbf7d0;
-  }
-  .callout.tip .ico{color:var(--success)}
-  .callout.tip b{color:#dcfce7}
-
-  /* APLICAR */
-  .apply{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:24px 26px;
-  }
-  .apply p{font-size:15px;color:var(--muted);margin-bottom:10px;line-height:1.65}
-  .apply p:last-child{margin-bottom:0}
-  .apply b{color:var(--text);font-weight:600}
-
-  /* REVELAÇÃO */
-  .reveal{
-    margin-top:64px;
-    padding-top:48px;
-    border-top:1px solid var(--border);
-  }
-  .reveal h2{
-    font-size:22px;
-    font-weight:800;
-    margin-bottom:14px;
-    color:var(--text);
-  }
-  .reveal p{
-    font-size:15.5px;
-    color:var(--muted);
-    line-height:1.7;
-    margin-bottom:14px;
-  }
-  .reveal p:last-of-type{margin-bottom:0}
-  .reveal b{color:var(--text);font-weight:600}
-  .reveal a.ig{
-    color:var(--accent);
-    border-bottom:1px solid rgba(168,85,247,.4);
-    transition:border-color .15s;
-  }
-  .reveal a.ig:hover{border-bottom-color:var(--accent)}
-
-  /* OFFER */
-  .offer{
-    margin-top:40px;
-    background:linear-gradient(135deg,rgba(168,85,247,.12),rgba(168,85,247,.04));
-    border:1.5px solid var(--accent-border);
-    border-radius:16px;
-    padding:32px 28px;
-  }
-  .offer .offer-eyebrow{
-    display:inline-block;
-    font-size:11.5px;
-    font-weight:800;
-    letter-spacing:1.4px;
-    text-transform:uppercase;
-    color:var(--lemon);
-    margin-bottom:12px;
-  }
-  .offer h2{
-    font-size:clamp(22px,3.5vw,28px);
-    font-weight:900;
-    line-height:1.2;
+    line-height:1.08;
     letter-spacing:-.5px;
     margin-bottom:18px;
     color:var(--text);
   }
-  .offer ul.benefits{
-    list-style:none;
+  .hero h1 em{font-style:italic;color:var(--rose-strong)}
+  .hero .lead{
+    font-size:16.5px;
+    color:var(--text-soft);
+    line-height:1.7;
+    max-width:520px;
+    margin:0 auto;
+  }
+
+  /* PROGRESS */
+  .progress-card{
+    margin:34px 0 8px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:18px 22px;
+    box-shadow:0 8px 30px rgba(191,108,92,.07);
+    text-align:left;
+  }
+  .progress-top{
     display:flex;
-    flex-direction:column;
-    gap:10px;
-    margin-bottom:24px;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom:12px;
   }
-  .offer ul.benefits li{
-    font-size:14.5px;
-    color:var(--muted);
-    padding-left:26px;
-    position:relative;
-    line-height:1.5;
+  .progress-top .pt-label{
+    font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--muted);
   }
+  .progress-top .pt-count{
+    font-family:'Fraunces',serif;font-size:18px;font-weight:700;color:var(--rose-strong);
+  }
+  .progress-track{height:9px;background:var(--cream-2);border-radius:999px;overflow:hidden}
+  .progress-fill{
+    height:100%;width:0;border-radius:999px;
+    background:linear-gradient(90deg,var(--pink),var(--rose));
+    transition:width .45s cubic-bezier(.2,.8,.2,1);
+  }
+  .progress-done-msg{
+    margin-top:12px;font-size:13.5px;color:var(--sage);font-weight:600;
+    display:none;align-items:center;gap:6px;
+  }
+  .progress-done-msg.show{display:flex}
+
+  /* SECTION */
+  section{margin-bottom:30px}
+  .block{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:26px 24px;
+    box-shadow:0 8px 30px rgba(191,108,92,.06);
+  }
+  .block > h2{
+    font-family:'Fraunces',serif;
+    font-size:24px;font-weight:600;letter-spacing:-.3px;
+    margin-bottom:14px;color:var(--text);
+  }
+  .block p{font-size:15.5px;color:var(--text-soft);margin-bottom:13px}
+  .block p:last-child{margin-bottom:0}
+  .block p b{color:var(--text);font-weight:600}
+
+  .bullets{display:flex;flex-direction:column;gap:11px;margin:16px 0 4px}
+  .bullets li{
+    list-style:none;font-size:15px;color:var(--text-soft);
+    padding-left:30px;position:relative;line-height:1.6;
+  }
+  .bullets li::before{
+    content:"";position:absolute;left:4px;top:8px;
+    width:11px;height:11px;border-radius:50%;
+    background:var(--blush);border:2.5px solid var(--rose);
+  }
+  .bullets li b{color:var(--text);font-weight:600}
+
+  .disclaimer{
+    margin-top:20px;font-size:13.5px;color:#7a5d2c;
+    background:var(--amber-soft);border:1px solid #f0dcb6;
+    padding:14px 16px;border-radius:12px;line-height:1.6;
+  }
+  .disclaimer b{color:#5e4720}
+
+  /* EXERCISE */
+  .exercise{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:24px 22px;
+    margin-bottom:16px;
+    box-shadow:0 8px 30px rgba(191,108,92,.06);
+    transition:box-shadow .25s,border-color .25s,opacity .3s;
+  }
+  .exercise.done{
+    border-color:var(--sage);
+    box-shadow:0 8px 30px rgba(95,155,118,.14);
+    background:linear-gradient(180deg,var(--sage-soft),var(--card) 60%);
+  }
+  .ex-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+  .ex-num{
+    flex-shrink:0;width:42px;height:42px;border-radius:14px;
+    background:linear-gradient(135deg,var(--pink),var(--rose));
+    color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:19px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 16px rgba(217,139,125,.35);
+  }
+  .exercise.done .ex-num{background:linear-gradient(135deg,#7fc197,var(--sage))}
+  .ex-head h3{
+    font-family:'Fraunces',serif;font-size:20px;font-weight:600;
+    letter-spacing:-.2px;line-height:1.2;color:var(--text);padding-top:3px;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+  .chip{
+    font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;
+    background:var(--cream-2);color:var(--text-soft);
+  }
+  .chip.focus{background:var(--rosey-soft);color:var(--rose-strong)}
+  .chip.time{background:#f3eafc;color:#8a5bc0}
+
+  .label{
+    font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+    color:var(--muted);margin-bottom:10px;
+  }
+  .steps{counter-reset:step;list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:18px}
+  .steps li{
+    counter-increment:step;font-size:14.5px;color:var(--text);
+    padding-left:34px;position:relative;line-height:1.55;
+  }
+  .steps li::before{
+    content:counter(step);position:absolute;left:0;top:0;
+    width:24px;height:24px;background:var(--blush);border-radius:50%;
+    color:var(--rose-strong);font-size:12px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .callout{border-radius:13px;padding:12px 15px;font-size:14px;line-height:1.55;margin-top:10px;display:flex;gap:10px;align-items:flex-start}
+  .callout .ico{font-weight:800;flex-shrink:0}
+  .callout.error{background:var(--rosey-soft);color:#9a4f43}
+  .callout.error .ico{color:var(--rose-strong)}
+  .callout.error b{color:#7d3e34}
+  .callout.tip{background:var(--sage-soft);color:#3f6b4f}
+  .callout.tip .ico{color:var(--sage)}
+  .callout.tip b{color:#2f5a3e}
+
+  .done-btn{
+    margin-top:18px;width:100%;
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    font-family:'Inter',sans-serif;font-size:14.5px;font-weight:700;
+    color:var(--rose-strong);background:var(--cream);
+    border:1.5px solid var(--line);border-radius:999px;
+    padding:12px 18px;cursor:pointer;transition:all .2s;
+  }
+  .done-btn:hover{border-color:var(--rose);background:var(--rosey-soft)}
+  .done-btn .box{
+    width:20px;height:20px;border-radius:6px;border:2px solid var(--rose);
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;color:#fff;transition:all .2s;
+  }
+  .exercise.done .done-btn{color:var(--sage);background:var(--sage-soft);border-color:var(--sage)}
+  .exercise.done .done-btn .box{background:var(--sage);border-color:var(--sage)}
+
+  /* APPLY */
+  .apply b{color:var(--text);font-weight:600}
+
+  /* REVEAL */
+  .reveal{margin-top:40px;text-align:center}
+  .reveal .avatar{
+    width:58px;height:58px;border-radius:50%;margin:0 auto 16px;
+    background:linear-gradient(135deg,var(--pink),var(--rose));
+    display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 8px 20px rgba(217,139,125,.3);
+  }
+  .reveal h2{font-family:'Fraunces',serif;font-size:22px;font-weight:600;margin-bottom:14px;color:var(--text)}
+  .reveal p{font-size:15px;color:var(--text-soft);line-height:1.7;margin-bottom:13px;max-width:520px;margin-left:auto;margin-right:auto}
+  .reveal b{color:var(--text);font-weight:600}
+  .reveal a.ig{color:var(--rose-strong);font-weight:600;border-bottom:1.5px solid var(--pink)}
+
+  /* OFFER */
+  .offer{
+    margin-top:34px;
+    background:linear-gradient(165deg,#fff,#fcebe6);
+    border:1.5px solid var(--pink);
+    border-radius:24px;padding:30px 26px;
+    box-shadow:0 16px 44px rgba(191,108,92,.13);
+  }
+  .offer .offer-eyebrow{
+    display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1px;
+    text-transform:uppercase;color:var(--rose-strong);
+    background:#fff;border:1px solid var(--line);padding:5px 13px;border-radius:999px;margin-bottom:14px;
+  }
+  .offer h2{font-family:'Fraunces',serif;font-size:clamp(23px,4.5vw,29px);font-weight:600;line-height:1.15;letter-spacing:-.4px;margin-bottom:8px;color:var(--text)}
+  .offer .offer-sub{font-size:15px;color:var(--text-soft);margin-bottom:20px}
+  .offer ul.benefits{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:24px}
+  .offer ul.benefits li{font-size:14.5px;color:var(--text-soft);padding-left:30px;position:relative;line-height:1.55}
   .offer ul.benefits li::before{
-    content:"✓";
-    position:absolute;
-    left:0;top:0;
-    color:var(--success);
-    font-weight:800;
-    font-size:14px;
+    content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;
+    background:var(--sage);color:#fff;border-radius:50%;font-size:11px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
   }
   .offer ul.benefits li b{color:var(--text);font-weight:600}
 
-  .cta{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:linear-gradient(135deg,var(--accent) 0%,#c026d3 100%);
-    color:#fff;
-    font-size:16px;
-    font-weight:800;
-    letter-spacing:.2px;
-    padding:16px 28px;
-    border-radius:999px;
-    box-shadow:0 8px 28px rgba(168,85,247,.30);
-    transition:transform .15s,box-shadow .15s;
-    text-decoration:none;
+  /* CALCULADORA (dentro da oferta) */
+  .calc{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:22px 20px;margin-bottom:24px;box-shadow:0 6px 20px rgba(191,108,92,.06);
   }
-  .cta:hover{
-    transform:translateY(-2px);
-    box-shadow:0 12px 36px rgba(168,85,247,.45);
+  .calc .calc-tag{
+    display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;
+    color:#8a5bc0;background:#f3eafc;padding:4px 10px;border-radius:999px;margin-bottom:12px;
   }
-  .cta .arrow{font-size:18px;line-height:1}
+  .calc h3{font-family:'Fraunces',serif;font-size:19px;font-weight:600;color:var(--text);margin-bottom:6px}
+  .calc .calc-desc{font-size:13.5px;color:var(--text-soft);margin-bottom:18px;line-height:1.55}
+  .calc-fields{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .calc-field{flex:1;min-width:130px}
+  .calc-field label{display:block;font-size:12px;font-weight:700;color:var(--text-soft);margin-bottom:6px}
+  .calc-field label .opt{font-weight:500;color:var(--muted)}
+  .calc-field input{
+    width:100%;font-family:'Inter',sans-serif;font-size:16px;color:var(--text);
+    background:var(--cream);border:1.5px solid var(--line);border-radius:12px;
+    padding:12px 14px;outline:none;transition:border-color .2s;
+  }
+  .calc-field input:focus{border-color:var(--rose)}
+  .calc-btn{
+    width:100%;font-family:'Inter',sans-serif;font-size:15px;font-weight:700;color:#fff;
+    background:linear-gradient(135deg,var(--pink),var(--rose));border:none;border-radius:999px;
+    padding:14px;cursor:pointer;transition:transform .15s,box-shadow .15s;
+    box-shadow:0 8px 22px rgba(217,139,125,.32);
+  }
+  .calc-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(217,139,125,.42)}
+  .calc-result{display:none;margin-top:18px;flex-direction:column;gap:10px}
+  .calc-result.show{display:flex}
+  .calc-error{display:none;margin-top:14px;font-size:13.5px;color:var(--rose-strong);font-weight:600}
+  .calc-error.show{display:block}
+  .res-row{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    background:var(--cream);border-radius:12px;padding:13px 16px;
+  }
+  .res-row .res-name{font-size:13.5px;color:var(--text-soft);font-weight:600}
+  .res-row .res-name small{display:block;font-weight:500;color:var(--muted);font-size:11.5px}
+  .res-row .res-val{font-family:'Fraunces',serif;font-size:19px;font-weight:700;color:var(--rose-strong);white-space:nowrap}
+  .res-row.fat{background:var(--sage-soft)}
+  .res-row.fat .res-val{color:var(--sage)}
+  .calc-note{font-size:12px;color:var(--muted);line-height:1.5;margin-top:4px}
 
-  .cta-sub{
-    margin-top:14px;
-    font-size:13px;
-    color:var(--muted);
-    line-height:1.6;
+  .cta{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:linear-gradient(135deg,var(--rose),var(--rose-strong));color:#fff;
+    font-size:16px;font-weight:800;letter-spacing:.2px;padding:17px 28px;border-radius:999px;
+    box-shadow:0 10px 30px rgba(191,108,92,.35);transition:transform .15s,box-shadow .15s;
   }
-  .cta-sub a{color:var(--accent);border-bottom:1px solid rgba(168,85,247,.4)}
-  .cta-sub a:hover{border-bottom-color:var(--accent)}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(191,108,92,.48)}
+  .cta-sub{margin-top:14px;font-size:13px;color:var(--text-soft);line-height:1.6;text-align:center}
 
   /* PS */
   .ps{
-    margin-top:36px;
-    background:var(--surface);
-    border-left:3px solid var(--accent);
-    border-radius:6px;
-    padding:20px 22px;
-    font-size:14.5px;
-    color:var(--muted);
-    line-height:1.7;
+    margin-top:24px;background:var(--card);border:1px solid var(--line);
+    border-left:4px solid var(--rose);border-radius:14px;padding:20px 22px;
+    font-size:14px;color:var(--text-soft);line-height:1.7;
   }
-  .ps .ps-label{
-    color:var(--accent);
-    font-weight:900;
-    letter-spacing:.4px;
-    text-transform:uppercase;
-    font-size:11.5px;
-    margin-right:6px;
-  }
+  .ps .ps-label{color:var(--rose-strong);font-weight:800;letter-spacing:.4px;text-transform:uppercase;font-size:11.5px;margin-right:6px}
   .ps b{color:var(--text);font-weight:600}
-  .ps a{color:var(--accent);font-weight:600;border-bottom:1px solid rgba(168,85,247,.4)}
-  .ps a:hover{border-bottom-color:var(--accent)}
+  .ps a{color:var(--rose-strong);font-weight:600;border-bottom:1.5px solid var(--pink)}
 
-  /* FOOTER */
   footer{
-    margin-top:56px;
-    padding-top:24px;
-    border-top:1px solid var(--border);
-    font-size:13px;
-    color:var(--muted-2);
-    text-align:center;
-    line-height:1.7;
+    margin-top:44px;padding-top:24px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--muted);text-align:center;line-height:1.8;
   }
-  footer a{color:var(--muted)}
-  footer a:hover{color:var(--accent)}
+  footer a{color:var(--text-soft)}
+  footer a:hover{color:var(--rose-strong)}
 
   @media (max-width:560px){
-    main.wrap{padding:32px 18px 64px}
-    .exercise{padding:24px 20px}
-    .offer{padding:26px 22px}
+    main.wrap{padding:34px 16px 60px}
+    .calc-fields{flex-direction:column;gap:12px}
   }
-  @media (prefers-reduced-motion:reduce){
-    *,*::before,*::after{transition-duration:.01s!important}
-  }
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01s!important}}
 </style>
 </head>
 <body>
@@ -452,235 +380,256 @@ src="https://www.facebook.com/tr?id=264800457918824&ev=PageView&noscript=1"/></n
 
     <!-- HERO -->
     <header class="hero">
-      <span class="eyebrow">Treino para mães · 20 min em casa</span>
-      <h1>Reconstruir a barriga depois do bebê, sem abdominal</h1>
+      <span class="eyebrow">🤱 Treino para mães · 20 min em casa</span>
+      <h1>Reconstruir a barriga depois do bebê, <em>sem abdominal</em></h1>
       <p class="lead">
-        Se os músculos da barriga se afastaram no meio depois da gravidez (diástase), abdominal tradicional e exercício de impacto cedo demais empurram a barriga pra fora e ainda podem causar escape de xixi. O caminho é o contrário: reconstruir de dentro pra fora. Esses 5 exercícios fazem isso em 20 minutos, no tempo do bebê.
+        Se os músculos da barriga se afastaram no meio depois da gravidez (diástase), abdominal tradicional e impacto cedo demais empurram a barriga pra fora e ainda podem causar escape de xixi. O caminho é o contrário: reconstruir de dentro pra fora. Esta sequência faz isso em 20 minutos, no tempo do bebê.
       </p>
 
-      <nav class="toc" aria-label="Índice dos exercícios">
-        <div class="toc-title">A sequência de 20 minutos</div>
-        <ol>
-          <li><a href="#ex1"><span class="num">01</span>Respiração 360° (a base de tudo)</a></li>
-          <li><a href="#ex2"><span class="num">02</span>Conexão do assoalho pélvico</a></li>
-          <li><a href="#ex3"><span class="num">03</span>Core profundo (transverso)</a></li>
-          <li><a href="#ex4"><span class="num">04</span>Ponte de glúteo</a></li>
-          <li><a href="#ex5"><span class="num">05</span>Prancha progressiva</a></li>
-        </ol>
-      </nav>
+      <div class="progress-card">
+        <div class="progress-top">
+          <span class="pt-label">Seu progresso de hoje</span>
+          <span class="pt-count"><span id="doneCount">0</span> de 5</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-done-msg" id="doneMsg">✓ Sequência completa. Mandou bem, mãe.</div>
+      </div>
     </header>
 
-    <!-- POR QUE ISSO IMPORTA -->
+    <!-- POR QUE -->
     <section>
-      <h2>Por que reconstruir antes de acelerar</h2>
-      <p>
-        Diástase é o <b>afastamento dos músculos retos abdominais no meio da barriga</b>. É comum no pós-parto: a barriga cresceu, a linha do meio se abriu pra dar espaço ao bebê, e nem sempre fecha sozinha depois.
-      </p>
-      <p>
-        O erro mais comum é querer "secar a barriga" com abdominal e prancha pesada logo cedo. Esses movimentos <b>aumentam a pressão pra fora</b> e podem piorar o afastamento, além de sobrecarregar o assoalho pélvico (daí o escape de xixi). A ordem certa é outra:
-      </p>
-      <ul class="bullets">
-        <li>Primeiro a <b>respiração</b>, que controla a pressão dentro da barriga.</li>
-        <li>Depois o <b>assoalho pélvico</b> e o <b>core profundo</b>, que são a base que segura tudo.</li>
-        <li>Só então a <b>força progressiva</b>. Primeiro reconstruir, depois acelerar.</li>
-      </ul>
-      <div class="disclaimer">
-        ⚠️ Tenha a liberação médica do pós-parto antes de começar (em geral após a consulta de revisão). Se durante os exercícios você sentir dor, escape de urina, ou ver um abaulamento/"vinco" no meio da barriga, pare e procure avaliação com médico ou fisioterapeuta pélvico. Este guia não substitui acompanhamento profissional.
+      <div class="block">
+        <h2>Por que reconstruir antes de acelerar</h2>
+        <p>Diástase é o <b>afastamento dos músculos retos abdominais no meio da barriga</b>. É comum no pós-parto: a barriga cresceu, a linha do meio se abriu pra dar espaço ao bebê e nem sempre fecha sozinha depois.</p>
+        <p>O erro mais comum é querer "secar a barriga" com abdominal e prancha pesada logo cedo. Esses movimentos <b>aumentam a pressão pra fora</b> e podem piorar o afastamento, além de sobrecarregar o assoalho pélvico (daí o escape de xixi). A ordem certa é outra:</p>
+        <ul class="bullets">
+          <li>Primeiro a <b>respiração</b>, que controla a pressão dentro da barriga.</li>
+          <li>Depois o <b>assoalho pélvico</b> e o <b>core profundo</b>, que são a base que segura tudo.</li>
+          <li>Só então a <b>força progressiva</b>. Primeiro reconstruir, depois acelerar.</li>
+        </ul>
+        <div class="disclaimer">
+          ⚠️ Tenha a <b>liberação médica do pós-parto</b> antes de começar (em geral após a consulta de revisão). Se durante os exercícios você sentir dor, escape de urina ou ver um abaulamento/"vinco" no meio da barriga, pare e procure avaliação com médico ou fisioterapeuta pélvico. Este guia não substitui acompanhamento profissional.
+        </div>
       </div>
     </section>
 
-    <!-- EXERCÍCIO 1 -->
-    <section id="ex1" class="exercise">
-      <h3><span class="ord">01</span>Respiração 360° (a base de tudo)</h3>
-      <div class="chips">
-        <span class="chip focus">Diafragma + core</span>
-        <span class="chip reps">5 minutos</span>
-        <span class="chip">Comece por aqui</span>
+    <!-- EXERCÍCIOS -->
+    <section id="exercicios">
+      <div class="exercise" data-ex>
+        <div class="ex-head">
+          <div class="ex-num">1</div>
+          <h3>Respiração 360° (a base de tudo)</h3>
+        </div>
+        <div class="chips"><span class="chip focus">Diafragma + core</span><span class="chip time">5 min</span><span class="chip">Comece por aqui</span></div>
+        <div class="label">Como executar</div>
+        <ol class="steps">
+          <li>Deite de barriga pra cima, joelhos dobrados e pés no chão. Mãos nas laterais das costelas.</li>
+          <li>Inspire pelo nariz expandindo as costelas pros lados e a barriga suavemente, como um balão que enche em volta.</li>
+          <li>Expire devagar pela boca soltando todo o ar e "fechando" a barriga pra dentro, sem forçar.</li>
+          <li>Repita no seu ritmo, lento e calmo, por cerca de 5 minutos.</li>
+        </ol>
+        <div class="callout error"><span class="ico">✕</span><div><b>Erro comum:</b> estufar só a barriga pra cima e travar o peito. Isso joga toda a pressão pra parede abdominal, o oposto do que queremos.</div></div>
+        <div class="callout tip"><span class="ico">✓</span><div><b>Dica:</b> sinta as costelas abrindo dos lados com as mãos. Essa expansão de 360° devolve o trabalho ao diafragma e tira a sobrecarga da barriga.</div></div>
+        <button class="done-btn" type="button"><span class="box">✓</span><span class="txt">Marcar como feito</span></button>
       </div>
 
-      <div class="label">Como executar</div>
-      <ol class="steps">
-        <li>Deite de barriga pra cima, joelhos dobrados e pés no chão. Mãos nas laterais das costelas.</li>
-        <li>Inspire pelo nariz expandindo as costelas pros lados e a barriga suavemente, como um balão que enche em volta.</li>
-        <li>Expire devagar pela boca soltando todo o ar e "fechando" a barriga pra dentro, sem forçar.</li>
-        <li>Repita no seu ritmo, lento e calmo, por cerca de 5 minutos.</li>
-      </ol>
-
-      <div class="callout error">
-        <span class="ico">✕</span>
-        <div><b>Erro comum:</b> estufar só a barriga pra cima e travar o peito. Isso joga toda a pressão pra parede abdominal, que é justamente o que queremos evitar.</div>
-      </div>
-      <div class="callout tip">
-        <span class="ico">✓</span>
-        <div><b>Dica:</b> sinta as costelas abrindo dos lados com as mãos. É essa expansão de 360° que devolve o trabalho ao diafragma e tira a sobrecarga da barriga.</div>
-      </div>
-    </section>
-
-    <!-- EXERCÍCIO 2 -->
-    <section id="ex2" class="exercise">
-      <h3><span class="ord">02</span>Conexão do assoalho pélvico</h3>
-      <div class="chips">
-        <span class="chip focus">Assoalho pélvico</span>
-        <span class="chip reps">3 minutos</span>
-        <span class="chip">Iniciante</span>
+      <div class="exercise" data-ex>
+        <div class="ex-head">
+          <div class="ex-num">2</div>
+          <h3>Conexão do assoalho pélvico</h3>
+        </div>
+        <div class="chips"><span class="chip focus">Assoalho pélvico</span><span class="chip time">3 min</span><span class="chip">Iniciante</span></div>
+        <div class="label">Como executar</div>
+        <ol class="steps">
+          <li>Mesma posição: deitada, joelhos dobrados, respiração calma.</li>
+          <li>Na expiração, imagine que está segurando o xixi e subindo essa região suavemente por dentro.</li>
+          <li>Na inspiração, solte e relaxe completamente. Relaxar é tão importante quanto contrair.</li>
+          <li>Repita acompanhando a respiração, sem pressa, por cerca de 3 minutos.</li>
+        </ol>
+        <div class="callout error"><span class="ico">✕</span><div><b>Erro comum:</b> prender a respiração e apertar glúteo, coxa ou barriga junto. A contração é só da região do assoalho pélvico.</div></div>
+        <div class="callout tip"><span class="ico">✓</span><div><b>Dica:</b> é uma contração leve e precisa, não com força máxima. Pense em "subir um elevador devagar até o primeiro andar", não chegar no último de uma vez.</div></div>
+        <button class="done-btn" type="button"><span class="box">✓</span><span class="txt">Marcar como feito</span></button>
       </div>
 
-      <div class="label">Como executar</div>
-      <ol class="steps">
-        <li>Mesma posição: deitada, joelhos dobrados, respiração calma.</li>
-        <li>Na expiração, imagine que está segurando o xixi e subindo essa região suavemente por dentro.</li>
-        <li>Na inspiração, solte e relaxe completamente. Relaxar é tão importante quanto contrair.</li>
-        <li>Repita acompanhando a respiração, sem pressa, por cerca de 3 minutos.</li>
-      </ol>
-
-      <div class="callout error">
-        <span class="ico">✕</span>
-        <div><b>Erro comum:</b> prender a respiração e apertar glúteo, coxa ou barriga junto. A contração é só da região do assoalho pélvico.</div>
-      </div>
-      <div class="callout tip">
-        <span class="ico">✓</span>
-        <div><b>Dica:</b> é uma contração leve e precisa, não com força máxima. Pense em "subir um elevador devagar até o primeiro andar", não chegar no último de uma vez.</div>
-      </div>
-    </section>
-
-    <!-- EXERCÍCIO 3 -->
-    <section id="ex3" class="exercise">
-      <h3><span class="ord">03</span>Core profundo (transverso)</h3>
-      <div class="chips">
-        <span class="chip focus">Core profundo</span>
-        <span class="chip reps">4 minutos</span>
-        <span class="chip">Iniciante</span>
+      <div class="exercise" data-ex>
+        <div class="ex-head">
+          <div class="ex-num">3</div>
+          <h3>Core profundo (transverso)</h3>
+        </div>
+        <div class="chips"><span class="chip focus">Core profundo</span><span class="chip time">4 min</span><span class="chip">Iniciante</span></div>
+        <div class="label">Como executar</div>
+        <ol class="steps">
+          <li>Deitada, joelhos dobrados, coluna neutra (sem arquear nem colar a lombar no chão à força).</li>
+          <li>Expire, ative o assoalho pélvico e leve suavemente o umbigo em direção à coluna.</li>
+          <li>Segure essa ativação leve enquanto continua respirando normalmente. Não trave o ar.</li>
+          <li>Solte, descanse alguns segundos e repita ao longo de cerca de 4 minutos.</li>
+        </ol>
+        <div class="callout error"><span class="ico">✕</span><div><b>Erro comum:</b> empurrar a barriga pra fora ou arquear as costas pra "fazer força". A barriga deve achatar suavemente, não estufar.</div></div>
+        <div class="callout tip"><span class="ico">✓</span><div><b>Dica:</b> mantenha a respiração rolando enquanto segura a contração. Conseguir conversar enquanto faz é sinal de que está no nível certo.</div></div>
+        <button class="done-btn" type="button"><span class="box">✓</span><span class="txt">Marcar como feito</span></button>
       </div>
 
-      <div class="label">Como executar</div>
-      <ol class="steps">
-        <li>Deitada, joelhos dobrados, coluna em posição neutra (sem arquear nem colar a lombar no chão à força).</li>
-        <li>Expire, ative o assoalho pélvico e leve suavemente o umbigo em direção à coluna.</li>
-        <li>Segure essa ativação leve enquanto continua respirando normalmente. Não trave o ar.</li>
-        <li>Solte, descanse alguns segundos e repita ao longo de cerca de 4 minutos.</li>
-      </ol>
-
-      <div class="callout error">
-        <span class="ico">✕</span>
-        <div><b>Erro comum:</b> empurrar a barriga pra fora ou arquear as costas pra "fazer força". Isso é o oposto do que queremos: a barriga deve achatar suavemente, não estufar.</div>
-      </div>
-      <div class="callout tip">
-        <span class="ico">✓</span>
-        <div><b>Dica:</b> mantenha a respiração rolando enquanto segura a contração. Conseguir conversar enquanto faz é sinal de que está no nível certo de esforço.</div>
-      </div>
-    </section>
-
-    <!-- EXERCÍCIO 4 -->
-    <section id="ex4" class="exercise">
-      <h3><span class="ord">04</span>Ponte de glúteo</h3>
-      <div class="chips">
-        <span class="chip focus">Glúteo + core</span>
-        <span class="chip reps">4 minutos</span>
-        <span class="chip">Iniciante</span>
+      <div class="exercise" data-ex>
+        <div class="ex-head">
+          <div class="ex-num">4</div>
+          <h3>Ponte de glúteo</h3>
+        </div>
+        <div class="chips"><span class="chip focus">Glúteo + core</span><span class="chip time">4 min</span><span class="chip">Iniciante</span></div>
+        <div class="label">Como executar</div>
+        <ol class="steps">
+          <li>Deitada, joelhos dobrados, pés no chão na largura do quadril.</li>
+          <li>Expire, ative o core e o assoalho pélvico e suba o quadril usando a força do glúteo.</li>
+          <li>Suba só até alinhar tronco e coxa numa linha reta. Pause 1 segundo contraindo o glúteo no topo.</li>
+          <li>Desça devagar inspirando. Repita ao longo de cerca de 4 minutos, com pausas quando precisar.</li>
+        </ol>
+        <div class="callout error"><span class="ico">✕</span><div><b>Erro comum:</b> empurrar com a lombar e estufar a barriga no topo. Quem sobe é o glúteo, não as costas. Se sentir a lombar, suba menos.</div></div>
+        <div class="callout tip"><span class="ico">✓</span><div><b>Dica:</b> expire na subida e mantenha a barriga "fechada" do começo ao fim, pra a pressão não ir toda pra parede abdominal.</div></div>
+        <button class="done-btn" type="button"><span class="box">✓</span><span class="txt">Marcar como feito</span></button>
       </div>
 
-      <div class="label">Como executar</div>
-      <ol class="steps">
-        <li>Deitada, joelhos dobrados, pés no chão na largura do quadril.</li>
-        <li>Expire, ative o core e o assoalho pélvico e suba o quadril usando a força do glúteo.</li>
-        <li>Suba só até alinhar tronco e coxa numa linha reta. Pause 1 segundo contraindo o glúteo no topo.</li>
-        <li>Desça devagar inspirando. Repita ao longo de cerca de 4 minutos, com pausas quando precisar.</li>
-      </ol>
-
-      <div class="callout error">
-        <span class="ico">✕</span>
-        <div><b>Erro comum:</b> empurrar com a lombar e estufar a barriga no topo. Quem sobe é o glúteo, não as costas. Se sentir a lombar trabalhando, suba menos.</div>
-      </div>
-      <div class="callout tip">
-        <span class="ico">✓</span>
-        <div><b>Dica:</b> expire na subida e mantenha a barriga "fechada" do começo ao fim. Assim o core trabalha junto e a pressão não vai toda pra parede abdominal.</div>
-      </div>
-    </section>
-
-    <!-- EXERCÍCIO 5 -->
-    <section id="ex5" class="exercise">
-      <h3><span class="ord">05</span>Prancha progressiva</h3>
-      <div class="chips">
-        <span class="chip focus">Força progressiva</span>
-        <span class="chip reps">4 minutos</span>
-        <span class="chip">Comece na parede</span>
-      </div>
-
-      <div class="label">Como executar</div>
-      <ol class="steps">
-        <li>Comece na versão mais fácil: em pé, apoiada na parede com os braços, corpo inclinado. Mais avançado: apoio nos joelhos no chão.</li>
-        <li>Ative o core e o assoalho pélvico e mantenha a barriga "fechada", sem deixar o meio abaular.</li>
-        <li>Segure a posição por 10 a 20 segundos respirando normalmente. Descanse.</li>
-        <li>Repita algumas vezes ao longo de cerca de 4 minutos, sempre na versão em que você controla o meio da barriga.</li>
-      </ol>
-
-      <div class="callout error">
-        <span class="ico">✕</span>
-        <div><b>Erro comum:</b> deixar a barriga cair ou abaular no centro. Se aparecer um "vinco" no meio da barriga, é sinal de que a versão está difícil demais por enquanto.</div>
-      </div>
-      <div class="callout tip">
-        <span class="ico">✓</span>
-        <div><b>Dica:</b> progrida só quando conseguir manter o meio da barriga firme e plano. Parede → joelhos → chão. Não tem pressa: a forma manda mais que a dificuldade.</div>
+      <div class="exercise" data-ex>
+        <div class="ex-head">
+          <div class="ex-num">5</div>
+          <h3>Prancha progressiva</h3>
+        </div>
+        <div class="chips"><span class="chip focus">Força progressiva</span><span class="chip time">4 min</span><span class="chip">Comece na parede</span></div>
+        <div class="label">Como executar</div>
+        <ol class="steps">
+          <li>Comece na versão mais fácil: em pé, apoiada na parede com os braços, corpo inclinado. Mais avançado: apoio nos joelhos no chão.</li>
+          <li>Ative o core e o assoalho pélvico e mantenha a barriga "fechada", sem deixar o meio abaular.</li>
+          <li>Segure a posição por 10 a 20 segundos respirando normalmente. Descanse.</li>
+          <li>Repita algumas vezes ao longo de cerca de 4 minutos, sempre na versão em que você controla o meio da barriga.</li>
+        </ol>
+        <div class="callout error"><span class="ico">✕</span><div><b>Erro comum:</b> deixar a barriga cair ou abaular no centro. Se aparecer um "vinco" no meio da barriga, a versão está difícil demais por enquanto.</div></div>
+        <div class="callout tip"><span class="ico">✓</span><div><b>Dica:</b> progrida só quando conseguir manter o meio firme e plano. Parede → joelhos → chão. A forma manda mais que a dificuldade.</div></div>
+        <button class="done-btn" type="button"><span class="box">✓</span><span class="txt">Marcar como feito</span></button>
       </div>
     </section>
 
     <!-- APLICAR -->
     <section>
-      <h2>Como aplicar no dia a dia</h2>
-      <div class="apply">
+      <div class="block apply">
+        <h2>Como aplicar no dia a dia</h2>
         <p><b>Frequência:</b> 3 a 4 vezes por semana, sempre na ordem acima (respiração → assoalho → core → glúteo → prancha). A sequência completa leva cerca de 20 minutos e cabe no tempo do bebê.</p>
         <p><b>Resultados:</b> a maioria das mães sente a barriga mais firme e o core mais conectado em 4 a 6 semanas de constância. A diástase costuma reduzir aos poucos quando o trabalho é feito na ordem certa.</p>
-        <p><b>Lembre:</b> primeiro reconstruir, depois acelerar. Pular a base pra "secar rápido" é o que faz a barriga continuar pra fora. Constância leve vence intensidade cedo demais.</p>
+        <p><b>Lembre:</b> primeiro reconstruir, depois acelerar. Pular a base pra "secar rápido" é o que faz a barriga continuar pra fora.</p>
       </div>
     </section>
 
     <!-- REVELAÇÃO -->
     <section class="reveal">
+      <div class="avatar">🤍</div>
       <h2>Quem escreveu isso?</h2>
-      <p>
-        Sou <b>Lucas Lima</b>, personal trainer. Trabalho muito com mulheres no pós-parto que querem voltar a treinar sem machucar a barriga, e a diástase é um dos temas que mais chegam até mim.
-      </p>
-      <p>
-        Essa sequência é a base que coloco na primeira fase de quem está reconstruindo o core depois do bebê. Não é mágica, não promete barriga em uma semana. É o caminho seguro pra construir uma base firme antes de acelerar de verdade.
-      </p>
-      <p>
-        Se quiser acompanhar o que mais faço: <a class="ig" href="https://instagram.com/personaltrainerlucaslima" target="_blank" rel="noopener">@personaltrainerlucaslima</a>.
-      </p>
+      <p>Sou <b>Lucas Lima</b>, personal trainer. Trabalho muito com mulheres no pós-parto que querem voltar a treinar sem machucar a barriga, e a diástase é um dos temas que mais chegam até mim.</p>
+      <p>Essa sequência é a base que coloco na primeira fase de quem está reconstruindo o core depois do bebê. Não é mágica, não promete barriga em uma semana. É o caminho seguro pra construir uma base firme antes de acelerar de verdade.</p>
+      <p>Se quiser acompanhar o que mais faço: <a class="ig" href="https://instagram.com/personaltrainerlucaslima" target="_blank" rel="noopener">@personaltrainerlucaslima</a>.</p>
     </section>
 
     <!-- OFFER: CONSULTORIA -->
     <section class="offer">
       <span class="offer-eyebrow">Quando estiver pronta pra acelerar</span>
       <h2>Acompanhamento mensal, no ritmo de mãe</h2>
+      <p class="offer-sub">Da reconstrução do core até a fase de queima e força, comigo do seu lado e com as ferramentas que minhas alunas usam de verdade. Esta é uma delas:</p>
+
+      <!-- CALCULADORA DE CARDIO -->
+      <div class="calc">
+        <span class="calc-tag">Ferramenta da consultoria</span>
+        <h3>Calculadora de cardio (zona de queima de gordura)</h3>
+        <p class="calc-desc">A mesma que minhas alunas recebem pra saber em que frequência cardíaca treinar o cardio. Coloque sua idade (e, se souber, a frequência em repouso) e veja sua zona ideal.</p>
+        <div class="calc-fields">
+          <div class="calc-field">
+            <label for="idade">Sua idade</label>
+            <input type="number" id="idade" inputmode="numeric" min="14" max="70" placeholder="ex: 32" />
+          </div>
+          <div class="calc-field">
+            <label for="repouso">FC em repouso <span class="opt">(opcional)</span></label>
+            <input type="number" id="repouso" inputmode="numeric" min="35" max="120" placeholder="ex: 68 bpm" />
+          </div>
+        </div>
+        <button class="calc-btn" type="button" id="calcBtn">Calcular minha zona</button>
+        <div class="calc-error" id="calcError">Coloque uma idade entre 14 e 70 anos.</div>
+        <div class="calc-result" id="calcResult">
+          <div class="res-row"><div class="res-name">FC máxima estimada<small>limite teórico do coração</small></div><div class="res-val"><span id="fcMax">–</span> bpm</div></div>
+          <div class="res-row fat"><div class="res-name">Zona de queima de gordura<small>cardio leve a moderado · 60–70%</small></div><div class="res-val"><span id="zonaFat">–</span> bpm</div></div>
+          <div class="res-row"><div class="res-name">Zona aeróbica / condicionamento<small>cardio mais forte · 70–80%</small></div><div class="res-val"><span id="zonaAer">–</span> bpm</div></div>
+          <p class="calc-note">Estimativa para orientação geral. No pós-parto, comece sempre pela faixa mais baixa e só evolua com liberação médica. Na consultoria eu ajusto isso pro seu caso real.</p>
+        </div>
+      </div>
 
       <ul class="benefits">
-        <li>Um plano que <b>evolui com você</b>: começa na reconstrução do core e vai progredindo a carga conforme o corpo responde, sem pressa e sem risco.</li>
-        <li><b>Ajuste semana a semana</b> e correção de execução por vídeo, pra ter certeza de que cada exercício está sendo feito com segurança.</li>
+        <li>Um plano que <b>evolui com você</b>: começa na reconstrução do core e progride a carga conforme o corpo responde, sem pressa e sem risco.</li>
+        <li><b>Ajuste semana a semana</b> e correção de execução por vídeo, pra cada exercício ser feito com segurança.</li>
         <li>Treinos pensados pra <b>caber na rotina com bebê</b>: em casa, curtos, sem depender de academia.</li>
-        <li>Alguém do <b>seu lado de verdade</b> até virar hábito, do "reconstruir" ao "acelerar".</li>
+        <li>As <b>ferramentas e calculadoras</b> que minhas alunas usam pra treinar com clareza, não no escuro.</li>
       </ul>
 
       <a class="cta" href="https://ptlucaslima.pt/#consultoria?ref=treino-diastase-maes" target="_blank" rel="noopener">
-        <span>Quero saber da consultoria</span>
-        <span class="arrow">→</span>
+        <span>Quero saber da consultoria</span><span>→</span>
       </a>
-      <p class="cta-sub">
-        Vagas limitadas pra manter o acompanhamento próximo.<br />
-        Sem compromisso: você conhece como funciona antes de decidir.
-      </p>
+      <p class="cta-sub">Vagas limitadas pra manter o acompanhamento próximo.<br />Sem compromisso: você conhece como funciona antes de decidir.</p>
     </section>
 
     <!-- PS — TREINO EXPRESS -->
     <div class="ps">
       <span class="ps-label">PS</span>
-      Ainda não quer um acompanhamento mensal, mas quer um <b>plano completo feito pra você</b>? O <a href="https://buy.stripe.com/9B67sN9W5ceNaW4aNw08g00?ref=treino-diastase-maes" target="_blank" rel="noopener">Treino Express (€7)</a> é a porta de entrada: você preenche um formulário curto e em até 72h recebe um PDF prescrito por mim, com base nas suas respostas e na sua fase de pós-parto. Pagamento único, sem mensalidade.
+      Ainda não quer acompanhamento mensal, mas quer um <b>plano completo feito pra você</b>? O <a href="https://buy.stripe.com/9B67sN9W5ceNaW4aNw08g00?ref=treino-diastase-maes" target="_blank" rel="noopener">Treino Express (€7)</a> é a porta de entrada: você preenche um formulário curto e em até 72h recebe um PDF prescrito por mim, com base nas suas respostas e na sua fase de pós-parto. Pagamento único, sem mensalidade.
     </div>
 
-    <!-- FOOTER -->
     <footer>
       © Lucas Lima · <a href="https://ptlucaslima.pt" target="_blank" rel="noopener">ptlucaslima.pt</a> · <a href="https://instagram.com/personaltrainerlucaslima" target="_blank" rel="noopener">@personaltrainerlucaslima</a>
     </footer>
 
   </main>
+
+<script>
+  /* Progresso interativo dos exercícios */
+  (function(){
+    var cards = Array.prototype.slice.call(document.querySelectorAll('[data-ex]'));
+    var total = cards.length;
+    var fill = document.getElementById('progressFill');
+    var countEl = document.getElementById('doneCount');
+    var msg = document.getElementById('doneMsg');
+    function refresh(){
+      var done = document.querySelectorAll('[data-ex].done').length;
+      countEl.textContent = done;
+      fill.style.width = (done/total*100) + '%';
+      msg.classList.toggle('show', done === total);
+    }
+    cards.forEach(function(card){
+      var btn = card.querySelector('.done-btn');
+      btn.addEventListener('click', function(){
+        var nowDone = card.classList.toggle('done');
+        btn.querySelector('.txt').textContent = nowDone ? 'Feito!' : 'Marcar como feito';
+        refresh();
+        if(window.fbq && nowDone){ try{ fbq('trackCustom','ExercicioConcluido'); }catch(e){} }
+      });
+    });
+  })();
+
+  /* Calculadora de cardio — zona de frequência cardíaca */
+  (function(){
+    var btn = document.getElementById('calcBtn');
+    var err = document.getElementById('calcError');
+    var res = document.getElementById('calcResult');
+    function band(low, high){ return Math.round(low) + '–' + Math.round(high); }
+    btn.addEventListener('click', function(){
+      var idade = parseInt(document.getElementById('idade').value, 10);
+      var rep = parseInt(document.getElementById('repouso').value, 10);
+      if(isNaN(idade) || idade < 14 || idade > 70){
+        res.classList.remove('show'); err.classList.add('show'); return;
+      }
+      err.classList.remove('show');
+      var fcMax = 220 - idade;
+      var hasRep = !isNaN(rep) && rep >= 35 && rep <= 120;
+      // Karvonen quando há FC repouso; senão, % direto da FC máxima
+      function alvo(p){ return hasRep ? (fcMax - rep) * p + rep : fcMax * p; }
+      document.getElementById('fcMax').textContent = fcMax;
+      document.getElementById('zonaFat').textContent = band(alvo(0.60), alvo(0.70));
+      document.getElementById('zonaAer').textContent = band(alvo(0.70), alvo(0.80));
+      res.classList.add('show');
+      if(window.fbq){ try{ fbq('trackCustom','UsouCalculadoraCardio'); }catch(e){} }
+    });
+  })();
+</script>
 </body>
 </html>
